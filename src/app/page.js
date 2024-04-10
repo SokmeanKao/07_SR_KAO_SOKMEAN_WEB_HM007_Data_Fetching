@@ -1,10 +1,22 @@
-import ActionMovieComponent from "@/components/ActionMovieComponent";
 import AllMovieComponent from "@/components/AllMovieComponent";
+import NavbarComponent from "@/components/NavbarComponent";
+
 export default function Home() {
   return (
     <main>
+      <div class="relative h-vh bg-black">
+        <div>
+          <img
+            src="https://puui.wetvinfo.com/vcover_hz_pic/0/2knhnaakii18oxj1683882661123/0?imageMogr2/thumbnail/600x|imageMogr2/thumbnail/600x"
+            alt=""
+            className="opacity-[70%] "
+          />
+        </div>
+        <div class="absolute top-0 left-0 w-full bg-transparent h-[300px]">
+          <NavbarComponent />
+        </div>
+      </div>
       <AllMovieComponent />
-      <ActionMovieComponent/>
     </main>
   );
 }
