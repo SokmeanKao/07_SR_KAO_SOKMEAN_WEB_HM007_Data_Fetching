@@ -8,7 +8,7 @@ const MovieDetailComponent = ({ movieData }) => {
         <span key={i} className="star filled">
           &#9733;
         </span>
-      ); // Filled star
+      );
     }
     return stars;
   };
@@ -43,7 +43,7 @@ const MovieDetailComponent = ({ movieData }) => {
               <p className=" text-[13px] text-gray-200 italic">
                 {movieData.payload.genre}
               </p>
-              <p className="text-[25px] text-yellow-400">
+              <p className="text-[25px] text-yellow-500">
                 {renderStars(movieData.payload.rating)}
               </p>
             </div>

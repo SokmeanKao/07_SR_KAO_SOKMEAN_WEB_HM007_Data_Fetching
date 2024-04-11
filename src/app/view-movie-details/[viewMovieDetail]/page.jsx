@@ -6,10 +6,10 @@ import React from "react";
 const MovieDetail = async ({ params }) => {
   const movieData = await getMovieById(params.viewMovieDetail);
   return (
-    <div className="bg-red-900 h-lvh">
+    <div className=" bg-[#38140D] h-lvh">
       <NavbarComponent />
       <div className="">
-      <MovieDetailComponent movieData={movieData} />
+        <MovieDetailComponent movieData={movieData} />
       </div>
     </div>
   );

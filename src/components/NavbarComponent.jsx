@@ -1,17 +1,17 @@
+import Link from "next/link";
 import React from "react";
-import styles from "../app/styles.module.css";
 
 const NavbarComponent = () => {
   return (
     <header className="w-[95%] m-auto pt-5 pb-10">
       <div className="w-full flex flex-wrap items-center">
         <div className="flex-1 flex justify-between items-center">
-          <a href="#" className="text-xl text-white">
+          <Link href="/" className="text-xl text-white">
             <img
               src="https://www.legend.com.kh/_ipx/s_117x44/legend-cinema-logo.png"
               alt=""
             />
-          </a>
+          </Link>
         </div>
 
         <label for="menu-toggle" className="pointer-cursor md:hidden block">
@@ -35,15 +35,15 @@ const NavbarComponent = () => {
           <nav>
             <ul className="flex items-center justify-between text-base text-white gap-5">
               <li className="hover:bg-white hover:text-black rounded-md">
-                <a className="py-1 px-4 block" href="#">
+                <Link className="py-1 px-4 block" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="hover:bg-white hover:text-black rounded-md">
                 <a className="py-1 px-4 block" href="#">
                   Populoar
                 </a>
-              </li >
+              </li>
               <li className="hover:bg-white hover:text-black rounded-md">
                 <a className="py-1 px-4 block" href="#">
                   Romance
@@ -59,8 +59,8 @@ const NavbarComponent = () => {
                   <input
                     type="text"
                     class="h-10 w-50 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none"
-                    placeholder="Type to search..."/>
-
+                    placeholder="Type to search..."
+                  />
                 </div>
               </li>
             </ul>
